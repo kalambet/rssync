@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D028FE1B1DFCB93500CFFCF5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028FE1A1DFCB93500CFFCF5 /* Feed.swift */; };
+		D028FE1D1DFCB94500CFFCF5 /* FeedItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028FE1C1DFCB94500CFFCF5 /* FeedItem.swift */; };
+		D028FE201DFCCA0500CFFCF5 /* FeddManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028FE1F1DFCCA0500CFFCF5 /* FeddManager.swift */; };
+		D028FE221DFD50F000CFFCF5 /* FeedLoaderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D028FE211DFD50F000CFFCF5 /* FeedLoaderProvider.swift */; };
 		D0358EEF1DFCB22D0092ED2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0358EEE1DFCB22D0092ED2E /* AppDelegate.swift */; };
 		D0358EF11DFCB22D0092ED2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0358EF01DFCB22D0092ED2E /* ViewController.swift */; };
 		D0358EF41DFCB22D0092ED2E /* RSSync.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D0358EF21DFCB22D0092ED2E /* RSSync.xcdatamodeld */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D028FE1A1DFCB93500CFFCF5 /* Feed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		D028FE1C1DFCB94500CFFCF5 /* FeedItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedItem.swift; sourceTree = "<group>"; };
+		D028FE1F1DFCCA0500CFFCF5 /* FeddManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeddManager.swift; sourceTree = "<group>"; };
+		D028FE211DFD50F000CFFCF5 /* FeedLoaderProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedLoaderProvider.swift; sourceTree = "<group>"; };
 		D0358EEB1DFCB22D0092ED2E /* RSSync.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSSync.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0358EEE1DFCB22D0092ED2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0358EF01DFCB22D0092ED2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D028FE191DFCB8F600CFFCF5 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D028FE1A1DFCB93500CFFCF5 /* Feed.swift */,
+				D028FE1C1DFCB94500CFFCF5 /* FeedItem.swift */,
+				D028FE211DFD50F000CFFCF5 /* FeedLoaderProvider.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		D028FE1E1DFCC9D300CFFCF5 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D028FE1F1DFCCA0500CFFCF5 /* FeddManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
 		D0358EE21DFCB22D0092ED2E = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +123,8 @@
 		D0358EED1DFCB22D0092ED2E /* RSSync */ = {
 			isa = PBXGroup;
 			children = (
+				D028FE1E1DFCC9D300CFFCF5 /* Managers */,
+				D028FE191DFCB8F600CFFCF5 /* Data */,
 				D0358EEE1DFCB22D0092ED2E /* AppDelegate.swift */,
 				D0358EF01DFCB22D0092ED2E /* ViewController.swift */,
 				D0358EF51DFCB22D0092ED2E /* Assets.xcassets */,
@@ -261,8 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D028FE201DFCCA0500CFFCF5 /* FeddManager.swift in Sources */,
 				D0358EF41DFCB22D0092ED2E /* RSSync.xcdatamodeld in Sources */,
+				D028FE1B1DFCB93500CFFCF5 /* Feed.swift in Sources */,
+				D028FE221DFD50F000CFFCF5 /* FeedLoaderProvider.swift in Sources */,
 				D0358EF11DFCB22D0092ED2E /* ViewController.swift in Sources */,
+				D028FE1D1DFCB94500CFFCF5 /* FeedItem.swift in Sources */,
 				D0358EEF1DFCB22D0092ED2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -511,6 +543,7 @@
 				D0358F151DFCB22D0092ED2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0358F161DFCB22D0092ED2E /* Build configuration list for PBXNativeTarget "RSSyncTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +552,7 @@
 				D0358F181DFCB22D0092ED2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D0358F191DFCB22D0092ED2E /* Build configuration list for PBXNativeTarget "RSSyncUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +561,7 @@
 				D0358F1B1DFCB22D0092ED2E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
